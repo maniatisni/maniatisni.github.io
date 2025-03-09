@@ -1,0 +1,14 @@
+---
+layout: archive
+permalink: /blog/
+---
+
+<h2></h2>
+
+<div class="entries-list">
+  {% for post in site.posts %}
+    {% if post.url != page.url %}
+      {% include archive-single.html type='list' %}
+    {% endif %}
+  {% endfor %}
+</div>
